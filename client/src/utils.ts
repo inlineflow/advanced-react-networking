@@ -10,4 +10,6 @@ async function get<T>(url:string): Promise<T> {
     return await response.json() as Promise<T>;
 }
 
-export { get }
+const fetcher = (url: string) => fetch(`${baseUrl}${url}`).then(res => res.json());
+
+export { get, fetcher }

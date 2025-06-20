@@ -6,6 +6,14 @@ export type User = {
     avatar?: string;
 }
 
+export type UserDetail = {
+    id: string;
+    name: string;
+    bio: string;
+    twitter: string;
+    homepage: string;
+}
+
 export type Feed = {
     id: string;
     title: string;
